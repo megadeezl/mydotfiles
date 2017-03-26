@@ -195,8 +195,8 @@ alias numFiles='echo $(ls -1 | wc -l)'      # numFiles:     Count of non-hidden 
 alias make1mb='mkfile 1m ./1MB.dat'         # make1mb:      Creates a file of 1mb size (all zeros)
 alias make5mb='mkfile 5m ./5MB.dat'         # make5mb:      Creates a file of 5mb size (all zeros)
 alias make10mb='mkfile 10m ./10MB.dat'      # make10mb:     Creates a file of 10mb size (all zeros)
-set currFolder to (folder of the front window as alias)
-set currFolder to (path to desktop folder as alias)
+#set currFolder to (folder of the front window as alias)
+#set currFolder to (path to desktop folder as alias)
 alias qfind="find . -name "                 # qfind:    Quickly search for file
 alias memHogsTop='top -l 1 -o rsize | head -20'
 alias memHogsPs='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'

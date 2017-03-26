@@ -234,3 +234,18 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+function gitbranch {
+   BRANCH=$1;
+   if [[ -z $BRANCH ]]; then
+       echo "Branch required";
+       echo "gitbranch branch_name";
+       exit 1;
+   fi;
+   git checkout master;
+   git pull;
+   git checkout -b $BRANCH;
+   git push --set-upstream origin $BRANCH;
+   grep -r "<<<<<" ./*
+}
+
