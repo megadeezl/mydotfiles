@@ -1,0 +1,11 @@
+[user]
+	name = Eric Robinson
+	email = megadeezl@comcast.net
+
+[alias]
+    st = status
+    ci = commit -v
+    co = checkout
+    br = branch
+    unstage = reset HEAD --
+    last = log -1 HEAD
