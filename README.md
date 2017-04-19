@@ -61,3 +61,6 @@ Some of the functionality of these dotfiles depends on formulae installed by `br
 
 # Credit to Mathias who I forked most of this from
  [Mathias Bynens](https://mathiasbynens.be/) 
+
+ [![](https://spacevim.org/img/build-with-SpaceVim.svg)](https://spacevim.org)
+
